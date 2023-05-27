@@ -1,0 +1,10 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.footer {
+  @include max-width;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}

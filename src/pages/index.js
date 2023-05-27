@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Couto Store</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel="icon" type="image/png" sizes="16x16"  href="logo-white.png" />
       </Head>
       <Navbar /> 
       <main>

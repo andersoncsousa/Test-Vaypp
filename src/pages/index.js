@@ -1,5 +1,6 @@
 import Footer from '@/Components/Footer/Footer';
 import Navbar from '@/Components/Navbar/Navbar';
+import Banner from '@/Components/Banner/Banner';
 import Head from 'next/head';
 
 export default function Home() {
@@ -12,8 +13,8 @@ export default function Home() {
       </Head>
       <Navbar /> 
       <main>
-        <div style={{height:'100vh', textAlign:'center', fontSize:'40px', display:'flex', alignItems:'center', justifyContent:'center'}}>
-          Conteudo
+        <div>
+          <Banner />
         </div>
       </main>
       <Footer />

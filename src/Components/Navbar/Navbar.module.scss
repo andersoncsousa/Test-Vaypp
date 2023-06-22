@@ -2,16 +2,23 @@
 @import '@/styles/mixins.scss';
 
 .navbar {
-  @include max-width;
+  // @include max-width;
+  width: 100%;
   margin-bottom: 0;
   display: flex;
   justify-content: space-between;
-  padding: 4rem 2rem;
+  padding: 30px 40px;
   align-items: center;
+  background: rgb(27,29,36);
+  background: linear-gradient(90deg, rgba(27,29,36,1) 60%, rgba(0,86,111,1) 100%);
+  position: fixed;
+  top:0;
 
   .links {
     display: flex;
     gap: 2rem;
+    align-items: center;
+    margin: 0 55px 0px 0;
 
     a {
       font-size: 1.4rem;
@@ -25,12 +32,51 @@
 
   .menu {
     width: 2.8rem;
-    height: 2.8rem;
+    height: 130px;
     display: none;
 
     @include device(tablet) {
       display: block;
     }
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    
+    .navBoxBtn{
+      width: 260px;
+      display: flex;
+      justify-content: space-between;
+
+      .navBtnSingup{
+        margin: 0;
+        background-color: $colorMain;
+      }
+  
+      .navBtnLogin{
+        margin: 0;
+        background: rgba(255, 255, 255, 0.12);
+      }
+  
+      a{
+        display: flex;
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 40px;
+        margin-top: 43px;
+  
+        color: $white;
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 112.5%;
+      }
+    }
+
   }
 
   .mobile-links {

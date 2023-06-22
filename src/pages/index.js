@@ -1,21 +1,19 @@
 import Footer from '@/Components/Footer/Footer';
 import Navbar from '@/Components/Navbar/Navbar';
-import Banner from '@/Components/Banner/Banner';
+import BannerPrincipal from '@/Components/BannerPrincipal/BannerPrincipal';
 import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Couto Store</title>
+        <title>Vaypp</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel="icon" type="image/png" sizes="16x16"  href="logo-white.png" />
+        <link rel="icon" type="image/png" sizes="16x16"  href="favicon.ico" />
       </Head>
-      <Navbar /> 
+        <Navbar />
       <main>
-        <div>
-          <Banner />
-        </div>
+        <BannerPrincipal />
       </main>
       <Footer />
     </>

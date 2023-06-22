@@ -10,49 +10,26 @@ import {
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  const listMotionProps = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: '28rem' },
-  };
-
-  const itemMotionProps = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: 50 },
-  };
-
+ 
   const renderLinks = navLinks.map((link, i) => (
-    <motion.li variants={itemMotionProps} key={i}>
+    <li key={i}>
       <a href={link.url} title={link.name}>{link.name}</a>
-    </motion.li>
+    </li>
   ));
-
-  const toggleIsMobile = () => setIsMobile((prevState) => !prevState);
 
   return (
     <section className={styles.navbar}>
       <div>
         <Link href='/'>
-          <Image src='/logo-white.png' alt='Couto Store' width={100} height={100} />
+          <Image src='/vaypp.png' alt='Vaypp' width={100} height={25} />
         </Link>
       </div>
       <nav>
         <ul className={styles.links}>{renderLinks}</ul>
-        <AiOutlineMenu onClick={toggleIsMobile} className={styles.menu} />
-        <motion.ul
-          variants={listMotionProps}
-          animate={isMobile ? 'open' : 'closed'}
-          transition={{
-            when: 'beforeChildren',
-            staggerChildren: 0.2,
-            type: 'just',
-            duration: 0.3,
-          }}
-          className={styles['mobile-links']}>
-          <AiOutlineClose onClick={toggleIsMobile} />
-          {renderLinks}
-        </motion.ul>
+        <div className={styles.navBoxBtn}>
+          <a href='#' title='Cadastrar' className={styles.navBtnSingup}>Cadastrar </a>
+          <a href='#' title='Entrar' className={styles.navBtnLogin}>Entrar </a>
+        </div>
       </nav>
     </section>
   );

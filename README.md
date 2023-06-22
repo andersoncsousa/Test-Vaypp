@@ -1,11 +1,11 @@
-<h1 align="center">Couto Store</h1>
+<h1 align="center">Vaypp</h1>
 
 <h3 align="center"> Rodando a Aplicação</h3>
 
  ### Clone este repositório
- - git clone https://github.com/andersoncsousa/couto-store.git
+ - git clone https://github.com/andersoncsousa/Test-Vaypp.git
  ### Acesse a pasta do projeto no terminal, a partir do diretório ao qual o comando de clonagem foi executado
- - cd couto-store
+ - cd Test-Vaypp
 
 ### Instale as dependências
  - yarn ou

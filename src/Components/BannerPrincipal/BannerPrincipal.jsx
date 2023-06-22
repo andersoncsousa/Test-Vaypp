@@ -15,7 +15,7 @@ const BannerPrincipal = () => {
                     nossa plataforma é o passaporte<br />
                     para seu sucesso garantido
                 </h3>
-                <a href="#" className={styles.btnBanner} title="Criei sua conta Grátis"> Criei sua conta Grátis</a>
+                <a href="#" className={styles.btnBanner} title="Crie sua conta Grátis"> Crie sua conta Grátis</a>
             </div>
             <div className={styles.BannerImg}>
                 <Image

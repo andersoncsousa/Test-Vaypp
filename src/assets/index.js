@@ -1,6 +1,3 @@
-import ana from './ana.jpg';
-import carlos from './carlos.jpg';
-import joao from './joao.jpg';
-import maria from './maria.jpg';
+import areaMembro from './areaMembro.svg';
 
-export { ana, carlos, joao, maria };
+export { areaMembro };

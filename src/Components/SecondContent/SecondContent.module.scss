@@ -1,0 +1,60 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.secondContent{
+    @include max-width;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+
+    .title{
+        @include max-width;
+        color: #FFF;
+        text-align: center;
+        font-size: 36px;
+        font-family: Poppins;
+        font-weight: 700;
+        line-height: 112.5%;
+        margin-bottom: 10px;
+        // margin: 30px 80px 30px 80px ;
+    }
+
+    .boxSecond{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        .iconsBox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .boxText{
+                width: 100%;
+                max-width: 450px;
+                h3{
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: Poppins;
+                    font-weight: 700;
+                    line-height: 144.5%;
+                }
+    
+                p{
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: Montserrat;
+                    line-height: 124.5%;
+                }
+            }
+        }
+
+        @include device(tablet) {
+            flex-direction: column;
+        }
+    }
+}

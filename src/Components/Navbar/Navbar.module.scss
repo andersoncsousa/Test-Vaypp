@@ -13,6 +13,7 @@
   background: linear-gradient(90deg, rgba(27,29,36,1) 60%, rgba(0,86,111,1) 100%);
   position: fixed;
   top:0;
+  z-index: 10;
 
   .links {
     display: flex;

@@ -52,7 +52,7 @@
                 font-weight: 500;
             }
             h4{
-                color: #FFF;
+                color: $white;
                 font-size: 35.562px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 700;
@@ -64,6 +64,7 @@
                 font-family: 'Montserrat', sans-serif;
                 line-height: 124.5%;
                 padding: 7px 0;
+                font-weight: 100;
             }
             a{
                 background-color: $colorSecond;

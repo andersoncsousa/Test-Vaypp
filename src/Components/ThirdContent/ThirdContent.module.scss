@@ -30,6 +30,10 @@
             max-width: 320px;
             height: 380px;
             background-color: $orangeMain;
+            background-image: url('/backgroundCard.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
             border-radius: 11px;
             border: 1px solid var(--quadradotranparente, #0B96C2);
             display: flex;
@@ -55,6 +59,7 @@
                     font-family: 'Montserrat', sans-serif;
                     line-height: 124.5%;
                     margin-bottom: 20px;
+                    font-weight: 100;
                 }
             }
             .seta{

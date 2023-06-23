@@ -2,120 +2,152 @@
 @import '@/styles/mixins.scss';
 
 .navbar {
-  // @include max-width;
-  width: 100%;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 40px;
-  align-items: center;
-  background: rgb(27,29,36);
-  background: linear-gradient(90deg, rgba(27,29,36,1) 60%, rgba(0,86,111,1) 100%);
-  position: fixed;
-  top:0;
-  z-index: 10;
-
-  .links {
+    // @include max-width;
+    width: 100%;
+    margin-bottom: 0;
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    padding: 30px 40px;
     align-items: center;
-    margin: 0 55px 0px 0;
+    background: rgb(27, 29, 36);
+    background: linear-gradient(90deg, rgba(27, 29, 36, 1) 60%, rgba(0, 86, 111, 1) 100%);
+    position: fixed;
+    top: 0;
+    z-index: 10;
 
-    a {
-      font-size: 1.4rem;
-      padding: 1rem;
-    }
-
-    @include device(tablet) {
-      display: none;
-    }
-  }
-
-  .menu {
-    width: 2.8rem;
-    height: 130px;
-    display: none;
-
-    @include device(tablet) {
-      display: block;
-    }
-  }
-
-  nav{
-    display: flex;
-    flex-direction: row;
-    
-    .navBoxBtn{
-      width: 260px;
-      display: flex;
-      justify-content: space-between;
-
-      .navBtnSingup{
-        margin: 0;
-        background-color: $colorMain;
-      }
-  
-      .navBtnLogin{
-        margin: 0;
-        background: rgba(255, 255, 255, 0.12);
-      }
-  
-      a{
+    .links {
         display: flex;
-        padding: 10px 30px;
+        gap: 2rem;
+        align-items: center;
+        margin: 0 55px 0px 0;
+
+        a {
+            font-size: 1.4rem;
+            padding: 1rem;
+
+            &:hover {
+                color: $colorSecond;
+            }
+        }
+
+        @include device(tablet) {
+            display: none;
+        }
+    }
+
+    .menu {
+        width: 2.8rem;
+        height: 130px;
+        display: none;
+
+        @include device(tablet) {
+            display: block;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+
+        .navBoxBtn {
+            width: 260px;
+            display: flex;
+            justify-content: space-between;
+
+            .navBtnSingup {
+                margin: 0;
+                background-color: $colorMain;
+
+                &:hover {
+                    background-color: $colorSecond;
+                }
+
+                @include device(tablet) {
+                    margin: 35px 0;
+                }
+            }
+
+            .navBtnLogin {
+                margin: 0;
+                background: rgba(255, 255, 255, 0.12);
+
+                &:hover {
+                    background-color: $colorSecond;
+                }
+
+                @include device(tablet) {
+                    margin: 35px 0;
+                }
+            }
+
+            a {
+                display: flex;
+                padding: 10px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-shrink: 0;
+                border-radius: 40px;
+                margin-top: 43px;
+
+                color: $white;
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                line-height: 112.5%;
+
+                @include device(tablet) {
+                    // padding: 10px;
+                    padding: 5px 15px;
+                    font-size: 13px;
+                    margin: 35px 0;
+                }
+            }
+
+            @include device(tablet) {
+                margin: 0 50px;
+                padding: 0;
+            }
+        }
+
+    }
+
+    .mobile-links {
+        background-color: $orangeMain;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        flex-shrink: 0;
-        border-radius: 40px;
-        margin-top: 43px;
-  
-        color: $white;
-        text-align: center;
-        font-size: 16px;
-        font-family: 'Poppins', sans-serif;
-        line-height: 112.5%;
-      }
+        position: fixed;
+        width: 28rem;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        display: none;
+
+        @include device(tablet) {
+            display: flex;
+        }
+
+        svg {
+            width: 2.8rem;
+            height: 2.8rem;
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+        }
+
+        li {
+            width: 100%;
+        }
+
+        a {
+            font-size: 1.6rem;
+            padding: 3rem;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
     }
-
-  }
-
-  .mobile-links {
-    background-color: $orangeMain;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 28rem;
-    height: 100%;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    display: none;
-
-    @include device(tablet) {
-      display: flex;
-    }
-
-    svg {
-      width: 2.8rem;
-      height: 2.8rem;
-      position: absolute;
-      top: 4rem;
-      left: 4rem;
-    }
-
-    li {
-      width: 100%;
-    }
-
-    a {
-      font-size: 1.6rem;
-      padding: 3rem;
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-    }
-  }
 }

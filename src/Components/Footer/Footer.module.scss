@@ -39,4 +39,8 @@
       }
     }
   }
+  @include device(tablet) {
+    flex-direction: column;
+    height: 100%;
+}
 }

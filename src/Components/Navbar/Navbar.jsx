@@ -10,12 +10,31 @@ import {
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
- 
+  const [isMobile, setIsMobile] = useState(false);
+
+  const listMotionProps = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "28rem" },
+  };
+
+  const itemMotionProps = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: 50 },
+  };
+
   const renderLinks = navLinks.map((link, i) => (
-    <li key={i}>
+    <motion.li variants={itemMotionProps} key={i}>
       <a href={link.url} title={link.name}>{link.name}</a>
-    </li>
+    </motion.li>
   ));
+
+  const toggleIsMobile = () => setIsMobile((prevState) => !prevState);
+ 
+  // const renderLinks = navLinks.map((link, i) => (
+  //   <li key={i}>
+  //     <a href={link.url} title={link.name}>{link.name}</a>
+  //   </li>
+  // ));
 
   return (
     <section className={styles.navbar}>
@@ -24,12 +43,35 @@ const Navbar = () => {
           <Image src='/vaypp.png' alt='Vaypp' width={100} height={25} />
         </Link>
       </div>
-      <nav>
+      {/* <nav>
         <ul className={styles.links}>{renderLinks}</ul>
         <div className={styles.navBoxBtn}>
           <a href='#' title='Cadastrar' className={styles.navBtnSingup}>Cadastrar </a>
           <a href='#' title='Entrar' className={styles.navBtnLogin}>Entrar </a>
         </div>
+      </nav> */}
+      <nav id='home'>
+        <ul className={styles.links}>{renderLinks}</ul>
+        <div className={styles.navBoxBtn}>
+          <a href='#' title='Cadastrar' className={styles.navBtnSingup}>Cadastrar </a>
+          <a href='#' title='Entrar' className={styles.navBtnLogin}>Entrar </a>
+        </div>       
+        <AiOutlineMenu onClick={toggleIsMobile} className={styles.menu} />
+        <motion.ul
+          variants={listMotionProps}
+          animate={isMobile ? "open" : "closed"}
+          transition={{
+            when: "beforeChildren",
+            staggerChildren: 0.2,
+            type: "just",
+            duration: 0.3,
+          }}
+          className={styles["mobile-links"]}
+        >
+          <AiOutlineClose onClick={toggleIsMobile} />
+          {renderLinks} 
+        </motion.ul>
+        
       </nav>
     </section>
   );

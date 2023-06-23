@@ -16,7 +16,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" type="image/png" sizes="16x16"  href="favicon.ico" />
       </Head>
-        <Navbar />
+      <Navbar />
       <main>
         <BannerPrincipal />
         <SecondContent />

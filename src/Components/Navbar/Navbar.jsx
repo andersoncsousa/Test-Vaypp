@@ -59,12 +59,14 @@ const Navbar = () => {
         
         <ul className={styles.links}>{renderLinks}</ul>
         <div className={styles.navBoxBtn}>
-          <a href="/registre" title="Cadastrar" className={styles.navBtnSingup}>
-            Cadastrar{" "}
-          </a>
-          <a href="/login" title="Entrar" className={styles.navBtnLogin}>
-            Entrar{" "}
-          </a>
+          
+            <Link href="/registre" title="Cadastrar" className={styles.navBtnSingup}>
+                Cadastrar
+            </Link>
+          
+            <Link href="/login" title="Entrar" className={styles.navBtnLogin}>
+                Entrar
+            </Link>
         </div>
         <AiOutlineMenu onClick={toggleIsMobile} className={styles.menu} />
         <motion.ul

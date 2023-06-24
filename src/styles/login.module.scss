@@ -126,3 +126,11 @@
 
     }
 }
+
+.Registro{
+    .boxBtns{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

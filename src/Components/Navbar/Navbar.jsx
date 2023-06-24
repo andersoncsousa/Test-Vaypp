@@ -59,7 +59,7 @@ const Navbar = () => {
         
         <ul className={styles.links}>{renderLinks}</ul>
         <div className={styles.navBoxBtn}>
-          <a href="#" title="Cadastrar" className={styles.navBtnSingup}>
+          <a href="/registre" title="Cadastrar" className={styles.navBtnSingup}>
             Cadastrar{" "}
           </a>
           <a href="/login" title="Entrar" className={styles.navBtnLogin}>

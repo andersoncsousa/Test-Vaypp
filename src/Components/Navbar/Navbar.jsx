@@ -83,12 +83,13 @@ const Navbar = () => {
           <AiOutlineClose onClick={toggleIsMobile} />
           {renderLinks}
         <div className={styles.navBoxBtn}>
-          <a href="#" title="Cadastrar" className={styles.navBtnSingup}>
-            Cadastrar{" "}
-          </a>
-          <a href="/login" title="Entrar" className={styles.navBtnLogin}>
-            Entrar{" "}
-          </a>
+            <Link href="/registre" title="Cadastrar" className={styles.navBtnSingup}>
+                Cadastrar
+            </Link>
+          
+            <Link href="/login" title="Entrar" className={styles.navBtnLogin}>
+                Entrar
+            </Link>
         </div>
         </motion.ul>
       </nav>

@@ -17,12 +17,13 @@ const BannerPrincipal = () => {
                 </h3>
                 <a href="#" className={styles.btnBanner} title="Crie sua conta Grátis"> Crie sua conta Grátis</a>
             </div>
-            <div className={styles.BannerImg}>
+            <div >
                 <Image
-                    src="/banner-principal.png"
+                    src="/banner-principal2.png"
                     alt=""
                     width={725}
                     height={500}
+                    className={styles.BannerImg}
                 />
             </div>
         </div>

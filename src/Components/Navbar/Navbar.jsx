@@ -1,13 +1,10 @@
-import Link from 'next/link';
-import styles from './Navbar.module.scss';
-import Image from 'next/image';
-import { navLinks } from '@/constants';
-import { useState } from 'react';
-import {
-  AiOutlineClose,
-  AiOutlineMenu,
-} from "react-icons/ai";
-import { motion } from 'framer-motion';
+import Link from "next/link";
+import styles from "./Navbar.module.scss";
+import Image from "next/image";
+import { navLinks } from "@/constants";
+import { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -24,12 +21,14 @@ const Navbar = () => {
 
   const renderLinks = navLinks.map((link, i) => (
     <motion.li variants={itemMotionProps} key={i}>
-      <a href={link.url} title={link.name}>{link.name}</a>
+      <a href={link.url} title={link.name}>
+        {link.name}
+      </a>
     </motion.li>
   ));
 
   const toggleIsMobile = () => setIsMobile((prevState) => !prevState);
- 
+
   // const renderLinks = navLinks.map((link, i) => (
   //   <li key={i}>
   //     <a href={link.url} title={link.name}>{link.name}</a>
@@ -38,11 +37,17 @@ const Navbar = () => {
 
   return (
     <section className={styles.navbar}>
-      <div>
-        <Link href='/'>
-          <Image src='/vaypp.png' alt='Vaypp' width={100} height={25} />
-        </Link>
-      </div>
+        <div className={styles.logoBox}>
+            <Link href="/">
+                <Image
+                    src="/vaypp.png"
+                    alt="Vaypp"
+                    width={100}
+                    height={25}
+                    className={styles.logo}
+                />
+            </Link>
+        </div>
       {/* <nav>
         <ul className={styles.links}>{renderLinks}</ul>
         <div className={styles.navBoxBtn}>
@@ -50,12 +55,17 @@ const Navbar = () => {
           <a href='#' title='Entrar' className={styles.navBtnLogin}>Entrar </a>
         </div>
       </nav> */}
-      <nav id='home'>
+      <nav id="home">
+        
         <ul className={styles.links}>{renderLinks}</ul>
         <div className={styles.navBoxBtn}>
-          <a href='#' title='Cadastrar' className={styles.navBtnSingup}>Cadastrar </a>
-          <a href='#' title='Entrar' className={styles.navBtnLogin}>Entrar </a>
-        </div>       
+          <a href="#" title="Cadastrar" className={styles.navBtnSingup}>
+            Cadastrar{" "}
+          </a>
+          <a href="/login" title="Entrar" className={styles.navBtnLogin}>
+            Entrar{" "}
+          </a>
+        </div>
         <AiOutlineMenu onClick={toggleIsMobile} className={styles.menu} />
         <motion.ul
           variants={listMotionProps}
@@ -69,9 +79,16 @@ const Navbar = () => {
           className={styles["mobile-links"]}
         >
           <AiOutlineClose onClick={toggleIsMobile} />
-          {renderLinks} 
+          {renderLinks}
+        <div className={styles.navBoxBtn}>
+          <a href="#" title="Cadastrar" className={styles.navBtnSingup}>
+            Cadastrar{" "}
+          </a>
+          <a href="/login" title="Entrar" className={styles.navBtnLogin}>
+            Entrar{" "}
+          </a>
+        </div>
         </motion.ul>
-        
       </nav>
     </section>
   );

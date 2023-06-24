@@ -13,8 +13,14 @@
         text-align: center;
         font-size: 36px;
         font-family: 'Poppins', sans-serif;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 118%;
+
+        @include device(tablet){
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            padding: 10px;
+        }
     }
 
     .boxContent{
@@ -42,6 +48,13 @@
             align-items: flex-start;
             padding: 30px;
             position: relative;
+
+            @include device(tablet){
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
             .boxText{
                 
                 h4{
@@ -52,6 +65,11 @@
                     line-height: 90.5%;
                     margin-top: 20px;
                     margin-bottom: 20px;
+
+                    @include device(tablet) {
+                        font-size: 2.5rem;
+                        text-align: center;
+                    }
                 }
                 p{
                     color: #FFF;
@@ -60,6 +78,10 @@
                     line-height: 124.5%;
                     margin-bottom: 20px;
                     font-weight: 100;
+
+                    @include device(tablet) {
+                        font-size: 1.3rem;
+                    }
                 }
             }
             .seta{
@@ -67,16 +89,23 @@
                 bottom: 40px;
                 right: -45px;
                 z-index: 5;
+                @include device(tablet) {
+                    display: none;
+                }
             } 
             .seta2{
                 position: absolute;
                 top: 50px;
                 right: -45px;
                 z-index: 5;
+                @include device(tablet) {
+                    display: none;
+                }
             }  
         }
         @include device(tablet) {
             flex-direction: column;
+            margin: 0px 10px;
         }
     }
 }

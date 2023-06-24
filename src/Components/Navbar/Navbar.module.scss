@@ -15,6 +15,14 @@
     top: 0;
     z-index: 10;
 
+    .logo{
+        width: 100%;
+
+        @include device(tablet){
+            margin-bottom: 20px;
+        }
+    }
+
     .links {
         display: flex;
         gap: 2rem;
@@ -42,6 +50,7 @@
 
         @include device(tablet) {
             display: block;
+            height: 50px;
         }
     }
 
@@ -49,10 +58,22 @@
         display: flex;
         flex-direction: row;
 
+        @include device(tablet){
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
         .navBoxBtn {
             width: 260px;
             display: flex;
             justify-content: space-between;
+
+            @include device(tablet){
+                margin: 0;
+                padding: 0;
+            }
 
             .navBtnSingup {
                 margin: 0;
@@ -63,7 +84,7 @@
                 }
 
                 @include device(tablet) {
-                    margin: 35px 0;
+                    margin: 0;
                 }
             }
 
@@ -76,7 +97,7 @@
                 }
 
                 @include device(tablet) {
-                    margin: 35px 0;
+                    margin: 0 ;
                 }
             }
 
@@ -102,11 +123,6 @@
                     font-size: 13px;
                     margin: 35px 0;
                 }
-            }
-
-            @include device(tablet) {
-                margin: 0 50px;
-                padding: 0;
             }
         }
 
@@ -136,7 +152,9 @@
             position: absolute;
             top: 4rem;
             left: 4rem;
+
         }
+        
 
         li {
             width: 100%;

@@ -1,5 +1,11 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
 
 .line{
     opacity: 0.2;
     margin: 150px;
+
+    @include device(tablet){
+        margin: 50px;
+    }
 }

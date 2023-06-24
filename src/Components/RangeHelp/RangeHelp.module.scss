@@ -37,6 +37,11 @@
         border: 2px solid #FFF;
         padding: 10px 40px;
 
+        &:hover{
+            background-color: $white;
+            color: #000;
+        }
+
         @include device(tablet) {
             text-align: center;
             font-size: 15px;

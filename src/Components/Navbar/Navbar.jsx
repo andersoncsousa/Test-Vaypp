@@ -29,44 +29,33 @@ const Navbar = () => {
 
   const toggleIsMobile = () => setIsMobile((prevState) => !prevState);
 
-  // const renderLinks = navLinks.map((link, i) => (
-  //   <li key={i}>
-  //     <a href={link.url} title={link.name}>{link.name}</a>
-  //   </li>
-  // ));
-
   return (
     <section className={styles.navbar}>
-        <div className={styles.logoBox}>
-            <Link href="/">
-                <Image
-                    src="/vaypp.png"
-                    alt="Vaypp"
-                    width={100}
-                    height={25}
-                    className={styles.logo}
-                />
-            </Link>
-        </div>
-      {/* <nav>
-        <ul className={styles.links}>{renderLinks}</ul>
-        <div className={styles.navBoxBtn}>
-          <a href='#' title='Cadastrar' className={styles.navBtnSingup}>Cadastrar </a>
-          <a href='#' title='Entrar' className={styles.navBtnLogin}>Entrar </a>
-        </div>
-      </nav> */}
+      <div className={styles.logoBox}>
+        <Link href="/">
+          <Image
+            src="/vaypp.png"
+            alt="Vaypp"
+            width={100}
+            height={25}
+            className={styles.logo}
+          />
+        </Link>
+      </div>
       <nav id="home">
-        
         <ul className={styles.links}>{renderLinks}</ul>
         <div className={styles.navBoxBtn}>
-          
-            <Link href="/registre" title="Cadastrar" className={styles.navBtnSingup}>
-                Cadastrar
-            </Link>
-          
-            <Link href="/login" title="Entrar" className={styles.navBtnLogin}>
-                Entrar
-            </Link>
+          <Link
+            href="/registre"
+            title="Cadastrar"
+            className={styles.navBtnSingup}
+          >
+            Cadastrar
+          </Link>
+
+          <Link href="/login" title="Entrar" className={styles.navBtnLogin}>
+            Entrar
+          </Link>
         </div>
         <AiOutlineMenu onClick={toggleIsMobile} className={styles.menu} />
         <motion.ul
@@ -82,15 +71,18 @@ const Navbar = () => {
         >
           <AiOutlineClose onClick={toggleIsMobile} />
           {renderLinks}
-        <div className={styles.navBoxBtn}>
-            <Link href="/registre" title="Cadastrar" className={styles.navBtnSingup}>
-                Cadastrar
-            </Link>
-          
-            <Link href="/login" title="Entrar" className={styles.navBtnLogin}>
-                Entrar
-            </Link>
-        </div>
+          <div className={styles.navBoxBtnMobile}></div>
+          <Link
+            href="/registre"
+            title="Cadastrar"
+            className={styles.navBtnSingup}
+          >
+            Cadastrar
+          </Link>
+
+          <Link href="/login" title="Entrar" className={styles.navBtnLogin}>
+            Entrar
+          </Link>
         </motion.ul>
       </nav>
     </section>

@@ -1,5 +1,6 @@
 import Line from "@/Components/Line/Line";
 import styles from "../styles/login.module.scss";
+import Link from "next/link";
 
 import {AiFillGoogleCircle, AiFillEye, AiFillEyeInvisible, AiOutlineMail, AiFillLock} from 'react-icons/ai'
 
@@ -17,17 +18,26 @@ const Login = () => {
             </div>
             <div className={styles.boxForm}>
                 <form action=""className={styles.Form}>
-
                     <input type="email" placeholder="Email" className={styles.inputForm} />
 
                     <input type="password" placeholder="Senha" className={styles.inputForm} />
 
-                    <a href="http://" target="_blank" className={styles.btnLink}>Esqueci minha senha</a>
+                    <Link href="/forget-password" 
+                    target="_blank" 
+                    className={styles.btnLink}
+                    >
+                        Esqueci minha senha
+                    </Link>
 
                     <a href="#" title="Entrar" className={styles.btnLogin}>Entrar</a>
 
-                    <p>Não tem uma conta? <a href="#" 
-                    target="_blank" className={styles.btnLink}>Registre-se</a>
+                    <p>Não tem uma conta? 
+                        <Link 
+                            href="/registre" 
+                            target="_blank" 
+                            className={styles.btnLink}>
+                            Registre-se
+                        </Link>
                     </p>
 
                     <hr className={styles.line} />

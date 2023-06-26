@@ -3,11 +3,18 @@
 
 
 .Login{
-    @include max-width;
+    // @include max-width;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 100px;
+    background-image: url('/esqueci-senha.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    // padding-top: 40px;
+    padding-bottom: 40px;
 
     @include device(tablet){
         flex-direction: column;
@@ -77,6 +84,10 @@
                 text-align: left;
                 font-size: 1.6rem;
                 color: rgba(11, 150, 194, 0.80);
+
+                &:hover {
+                    color: $colorSecond;
+                }
             }
 
             .btnLogin{
@@ -93,6 +104,234 @@
                 justify-content: center;
                 align-items: center;
                 margin-top: 30px;
+
+                &:hover {
+                    background-color: $colorMain;
+                }
+            }
+
+            .line{
+                width: 100%;
+                max-width: 430px;
+                opacity: 0.1;
+            }
+
+            .boxGoogle{
+                width: 100%;
+                max-width: 430px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .btnGoogle{
+                    width: 100%;
+                    max-width: 250px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 80px;
+                    border-radius: 7px;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    background: linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%), rgba(35, 35, 35, 0.5);
+                    margin: 15px;
+
+                    &:hover {
+                        background-color: $colorSecond;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.Registro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-image: url('/esqueci-senha.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 40px;
+
+    .boxTextRegistro{
+        width: 100%;
+        max-width: 430px;
+        display: flex;
+        gap: 35px;
+        flex-direction: column;
+        h2{
+            color: #0B96C2;
+            text-shadow: 0px 4.135135173797607px 4.135135173797607px 0px rgba(0, 0, 0, 0.50);
+            font-size: 62.027px;
+            font-family: $fontFamily2;
+            font-weight: 700;
+            letter-spacing: -1.551px;
+        }
+    
+        h3{
+            font-size: 4.2rem;
+            font-family: $fontFamily2;
+            font-weight: 500;
+            line-height: 52px;
+        }
+        h4{
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 500;
+            .linkBack{
+                color: #0b96c2cc;
+                font-size: 20px;
+                font-weight: 500;
+
+                &:hover {
+                    color: $colorSecond;
+                }
+            }
+        }
+    }
+
+    .boxForm{
+        width: 100%;
+        max-width: 547px;
+        background-color: $orangeMain;
+        border-radius: 20px;
+        border: 1px solid var(--quadradotranparente, #0B96C2);
+        background: linear-gradient(51deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(224deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.30);
+        box-shadow: 0px 4px 34.33000183105469px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 50px;
+
+        .Form{
+            width: 100%;
+            max-width: 547px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+
+            h3{
+                width: 100%;
+                padding: 5px 40px;
+                display: flex;
+            }
+
+            .inputForm{
+                background-color: transparent;
+            }
+
+            .inputForm{
+                background: transparent;
+                width: 100%;
+                max-width: 430px;
+                border-radius: 11px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                // background: var(--botes-transparentes, linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.20));
+                box-shadow: -3px 3px 6px 0px rgba(0, 0, 0, 0.20);
+                backdrop-filter: blur(17.165000915527344px);
+                padding: 15px 40px;
+                margin: 0 20px;
+            }
+
+            .boxFormBtns{
+                width: 100%;
+                max-width: 432px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+
+                p{
+                    margin-bottom: 20px;
+                }
+
+                .boxBtns{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    // border: 1px solid red;
+                    .btnVenda{
+                        padding: 26px;
+                        border-radius: 11px;
+                        border: 1px solid #FFC700;
+                        background: #343434;
+                        &:hover{
+                            border: 1px solid $colorMain;
+                        }
+                        &:active{
+                            border: 1px solid #D9D9D9;
+                            background: #343434;
+                        }
+                    }
+                    .btnComprar{
+                        padding: 26px;
+                        border: 1px solid #D9D9D9;
+                        border-radius: 0 11px 11px 0;
+                        background: #343434;
+                        border-left: none;
+                        
+                        &:hover{
+                            border: 1px solid #FFC700;
+                        }
+                        &:active{
+                            border: 1px solid $colorMain;
+                            background: #343434;
+                        }
+                    }
+                }
+            }
+
+            .boxTermos{
+                padding: 5px 40px;
+                text-align: center;
+                p{
+                    font-size: 16px;
+                    color: $white;
+                }
+                a{
+                    font-size: 16px;
+                    color: #0B96C2;
+                    padding: 0px 5px;
+
+                    &:hover {
+                        color: $colorSecond;
+                    }
+                }
+            }
+
+            .btnLink{
+                width: 100%;
+                max-width: 430px;
+                text-align: left;
+                font-size: 1.6rem;
+                color: rgba(11, 150, 194, 0.80);
+            }
+
+            .btnLogin{
+                width: 100%;
+                max-width: 430px;
+                height: 70px;
+                padding: 10px 40px;
+                border-radius: 11px;
+                background: #FFC700;
+                color: #000;
+                text-align: center;
+                display: flex;
+                font-weight: 700;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+                margin-bottom: 50px;
+
+                &:hover {
+                    background-color: $colorMain;
+                }
             }
 
             .line{
@@ -125,12 +364,191 @@
         }
 
     }
+
 }
 
-.Registro{
-    .boxBtns{
+.ForgetPassword{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/esqueci-senha.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 40px;
+
+    h3{
+        width: 100%;
+        padding: 5px 40px;
         display: flex;
-        flex-direction: row;
         justify-content: center;
     }
+    .boxForm{
+        width: 100%;
+        max-width: 547px;
+        background-color: $orangeMain;
+        border-radius: 20px;
+        border: 1px solid var(--quadradotranparente, #0B96C2);
+        background: linear-gradient(51deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(224deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.30);
+        box-shadow: 0px 4px 34.33000183105469px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 20px;
+
+        .Form{
+            width: 100%;
+            max-width: 547px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+
+            .inputForm{
+                background-color: transparent;
+            }
+
+            .inputForm{
+                background: transparent;
+                width: 100%;
+                max-width: 430px;
+                border-radius: 11px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                // background: var(--botes-transparentes, linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.20));
+                box-shadow: -3px 3px 6px 0px rgba(0, 0, 0, 0.20);
+                backdrop-filter: blur(17.165000915527344px);
+                padding: 15px 40px;
+                margin: 0 20px;
+            }
+
+            .boxFormBtns{
+                width: 100%;
+                max-width: 432px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+
+                p{
+                    margin-bottom: 20px;
+                }
+
+                .boxBtns{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    // border: 1px solid red;
+                    .btnVenda{
+                        padding: 26px;
+                        border-radius: 11px;
+                        border: 1px solid #FFC700;
+                        background: #343434;
+                        &:hover{
+                            border: 1px solid $colorMain;
+                        }
+                        &:active{
+                            border: 1px solid #D9D9D9;
+                            background: #343434;
+                        }
+                    }
+                    .btnComprar{
+                        padding: 26px;
+                        border: 1px solid #D9D9D9;
+                        border-radius: 0 11px 11px 0;
+                        background: #343434;
+                        border-left: none;
+                        
+                        &:hover{
+                            border: 1px solid #FFC700;
+                        }
+                        &:active{
+                            border: 1px solid $colorMain;
+                            background: #343434;
+                        }
+                    }
+                }
+            }
+
+            .boxTermos{
+                padding: 5px 40px;
+                text-align: center;
+                p{
+                    font-size: 16px;
+                    color: $white;
+                }
+                a{
+                    font-size: 16px;
+                    color: #0B96C2;
+                    padding: 0px 5px;
+                }
+            }
+
+            .btnLink{
+                width: 100%;
+                max-width: 430px;
+                text-align: left;
+                font-size: 1.6rem;
+                color: rgba(11, 150, 194, 0.80);
+            }
+
+            .btnLogin{
+                width: 100%;
+                max-width: 430px;
+                height: 70px;
+                padding: 10px 40px;
+                border-radius: 11px;
+                background-color: #FFC700;
+                color: #000;
+                text-align: center;
+                display: flex;
+                font-weight: 700;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                &:hover {
+                    background-color: $colorMain;
+                }
+            }
+
+            .btnBack{
+                margin-bottom: 20px;
+
+                &:hover {
+                    color: $colorSecond;
+                }
+            }
+
+            .line{
+                width: 100%;
+                max-width: 430px;
+                opacity: 0.1;
+            }
+
+            .boxGoogle{
+                width: 100%;
+                max-width: 430px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .btnGoogle{
+                    width: 100%;
+                    max-width: 250px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 80px;
+                    border-radius: 7px;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    background: linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%), rgba(35, 35, 35, 0.5);
+                    margin: 15px;
+                }
+            }
+        }
+    } 
 }

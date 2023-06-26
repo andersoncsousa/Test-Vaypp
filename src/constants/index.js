@@ -61,13 +61,13 @@ export const secondContent = [
 export const footer = {
   solucoes: [
     { name: "Central de Ajuda", url: "#" },
-    { name: "Contato", url: "#" },
+    { name: "Contato", url: "/contact" },
     { name: "Pagamentos", url: "#" },
     { name: "lorem", url: "#" },
     { name: "lorem", url: "#" },
   ],
   educacao: [
-    { name: "Meu Perfil", url: "#" },
+    { name: "Meu Perfil", url: "data" },
     { name: "lorem", url: "#" },
     { name: "lorem", url: "#" },
     { name: "lorem", url: "#" },
@@ -90,7 +90,7 @@ export const footer = {
     {
       name: "Instagram",
       component: instagram,
-      url: "https://www.instagram.com/caiqueira/",
+      url: "#",
     },
     {
       name: "Twitter",
@@ -105,7 +105,7 @@ export const footer = {
     {
       name: "Github",
       component: github,
-      url: "https://github.com/andersoncsousa",
+      url: "#",
     },
   ],
 };

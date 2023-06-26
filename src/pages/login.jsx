@@ -16,6 +16,7 @@ const Login = () => {
                     na plataforma
                 </h3>
             </div>
+            
             <div className={styles.boxForm}>
                 <form action=""className={styles.Form}>
                     <input type="email" placeholder="Email" className={styles.inputForm} />

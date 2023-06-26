@@ -2,13 +2,14 @@
 @import '@/styles/mixins.scss';
 
 .Banner{
+    // width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 180px 30px 150px 30px;
 
     .BannerText{
-        margin: 0 50px 0 0;
+        margin: 0;
         text-align: left;
         h2{
             font-family: 'Montserrat', sans-serif;
@@ -75,9 +76,10 @@
     }
 
     .BannerImg{
-        width: 100%;
+        max-width: 650px;
+        // width: 100%;
         height: 100%;
         // border: 10px solid #102c37;
-        border-radius: 10px;
+        // border-radius: 10px;
     }
 }

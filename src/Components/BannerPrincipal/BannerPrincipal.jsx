@@ -21,7 +21,7 @@ const BannerPrincipal = () => {
                 <Image
                     src="/banner-principal2.png"
                     alt=""
-                    width={725}
+                    width={650}
                     height={500}
                     className={styles.BannerImg}
                 />

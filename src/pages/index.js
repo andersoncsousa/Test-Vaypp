@@ -20,9 +20,9 @@ export default function Home() {
       <main>
         <BannerPrincipal />
         <SecondContent />
-        <Line />
+        {/* <Line /> */}
         <ThirdContent />
-        <Line />
+        {/* <Line /> */}
         <FourthContent />
         <RangeHelp />
       </main>

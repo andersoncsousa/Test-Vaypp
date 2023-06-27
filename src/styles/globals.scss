@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  animation-delay: 2s;
   font-family: $fontFamily;
 }
 
@@ -34,6 +35,8 @@ body {
   // background-size: 400% 400%;
   // animation: gradient 15s ease infinite;
   color: $white;
+  // scroll-behavior: smooth;
+
 }
 
 @keyframes gradient {

@@ -10,7 +10,7 @@
     padding: 30px 40px;
     align-items: center;
     background: rgb(27, 29, 36);
-    background: linear-gradient(90deg, rgba(27, 29, 36, 1) 60%, rgba(0, 86, 111, 1) 100%);
+    background: linear-gradient(90deg, rgba(27, 29, 36, 1) 60%, #070774 100%);
     position: fixed;
     top: 0;
     z-index: 10;
@@ -79,7 +79,7 @@
 
             .navBtnSingup {
                 margin: 0;
-                background-color: $colorMain;
+                background-color: #0B96C2;
 
                 &:hover {
                     color: #000;

@@ -2,7 +2,10 @@
 @import '@/styles/mixins.scss';
 
 .line{
-    opacity: 0.2;
+    // width: 100%;
+    background: rgb(27,34,51);
+    background: linear-gradient(213deg, rgba(27,34,51,1) 20%, #060661 44%, rgba(47,50,71,1)83%);
+    // opacity: 0.2;
     margin: 150px;
 
     @include device(tablet){

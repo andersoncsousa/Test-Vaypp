@@ -7,7 +7,7 @@ import { secondContent } from "@/constants";
 const SecondContent = () => {
 
     return (
-        <div className={styles.secondContent}>
+        <div className={styles.secondContent} id="vantagens">
             <h3 className={styles.title}>
                 Prepare-se para mudar o rumo do seu negócio com as ferramentas que irão
                 alavancar seu sucesso!

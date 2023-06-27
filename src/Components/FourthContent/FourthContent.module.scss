@@ -2,12 +2,15 @@
 @import '@/styles/mixins.scss';
 
 .FourthContent{
-    @include max-width;
+    // @include max-width;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 200px;
+    background: rgb(27,29,36);
+    background: linear-gradient(90deg, rgba(27, 29, 36, 1) 60%, #050557 100%);
+    padding-top: 80px;
+    // margin-bottom: 200px;
     h3{
         width: 100%;
         max-width: 670px;

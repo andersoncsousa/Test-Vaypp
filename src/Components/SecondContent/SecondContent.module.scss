@@ -2,13 +2,16 @@
 @import '@/styles/mixins.scss';
 
 .secondContent{
-    @include max-width;
+    // @include max-width;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 80px;
+    padding: 80px 20px 80px 20px;
+    background: rgb(27,34,51);
+    background: linear-gradient(213deg, rgba(27,34,51,1) 20%, #060661 44%, rgba(47,50,71,1)83%);
+
 
     .title{
         width: 100%;

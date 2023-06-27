@@ -3,7 +3,7 @@ import styles from "./ThirdContent.module.scss";
 
 const ThirdContent = () => {
     return(
-        <div className={styles.ThirdContent}>
+        <div className={styles.ThirdContent} id="solucoes">
             <h3>
                 Juntos, podemos alavancar seus lucros e aumentar a escalabilidade do seu negócio!
             </h3>

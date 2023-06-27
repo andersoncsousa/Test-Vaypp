@@ -95,10 +95,12 @@
     justify-content: center;
     gap: 100px;
     // background-color: $orangeMain;
-    background-image: url('/esqueci-senha.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    // background-image: url('/esqueci-senha.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
+    background: rgb(47,50,71);
+background: linear-gradient(336deg, rgba(47,50,71,1) 26%, rgba(7,7,116,1) 48%, rgba(47,50,71,1)76%);
     margin-top: 90px;
     padding-bottom: 60px;
 
@@ -227,11 +229,22 @@
                     margin: 15px;
 
                     &:hover {
+                        color: #000;
+                        font-weight: 500;
                         background-color: $colorSecond;
                     }
                 }
             }
         }
 
+    }
+}
+
+.iconGoogle{
+    font-weight: 500;
+    font-size: 26px;
+    color: $colorMain;
+    &:hover{
+        color: #000;
     }
 }

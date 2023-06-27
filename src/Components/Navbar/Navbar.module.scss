@@ -82,6 +82,7 @@
                 background-color: $colorMain;
 
                 &:hover {
+                    color: #000;
                     transition: all 0.2s ease-out;
                     background-color: $colorSecond;
                 }
@@ -96,6 +97,7 @@
                 background: rgba(255, 255, 255, 0.12);
 
                 &:hover {
+                    color: #000;
                     transition: all 0.2s ease-out;
                     background-color: $colorSecond;
                 }

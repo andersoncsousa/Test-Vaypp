@@ -52,6 +52,7 @@
         background: linear-gradient(51deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(224deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.30);
         box-shadow: 0px 4px 34.33000183105469px 0px rgba(0, 0, 0, 0.25);
         margin-top: 50px;
+        font-size: 1.6rem;
 
         .Form{
             width: 100%;
@@ -78,6 +79,7 @@
                 backdrop-filter: blur(17.165000915527344px);
                 padding: 15px 40px;
                 margin: 0 20px;
+                color: $white;
             }
 
             .btnLink{
@@ -133,7 +135,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding: 20px 80px;
+                    padding: 20px 70px;
                     text-transform: uppercase;
                     border-radius: 7px;
                     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -151,7 +153,7 @@
 }
 
 .Registro{
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;

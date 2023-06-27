@@ -26,6 +26,10 @@
         flex-direction: column;
         a{
           padding: 20px 0 0 0;
+          &:hover{
+            transition: all 0.2s ease-out;
+            color: $colorMain;
+          }
         }
       }
     }
@@ -33,6 +37,10 @@
   .social{
     .link{
       padding: 0 0 0 10px;
+      &:hover{
+        transition: all 0.2s ease-out;
+        color: $colorMain;
+      }
       i{
         font-size: 20px;
         // padding: 10px;

@@ -34,6 +34,7 @@
             padding: 1rem;
 
             &:hover {
+                transition: all 0.2s ease-out;
                 color: $colorSecond;
             }
         }
@@ -81,6 +82,7 @@
                 background-color: $colorMain;
 
                 &:hover {
+                    transition: all 0.2s ease-out;
                     background-color: $colorSecond;
                 }
 
@@ -94,6 +96,7 @@
                 background: rgba(255, 255, 255, 0.12);
 
                 &:hover {
+                    transition: all 0.2s ease-out;
                     background-color: $colorSecond;
                 }
 
@@ -148,6 +151,7 @@
             background-color: $colorMain;
 
             &:hover {
+                transition: all 0.2s ease-out;
                 background-color: $colorSecond;
             }
 
@@ -161,6 +165,7 @@
             background: rgba(255, 255, 255, 0.12);
 
             &:hover {
+                transition: all 0.2s ease-out;
                 background-color: $colorSecond;
             }
 

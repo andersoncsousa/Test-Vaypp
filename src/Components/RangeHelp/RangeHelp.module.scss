@@ -38,6 +38,7 @@
         padding: 10px 40px;
 
         &:hover{
+            transition: all 0.2s ease-out;
             background-color: $white;
             color: #000;
         }

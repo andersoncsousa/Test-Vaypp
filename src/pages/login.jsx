@@ -16,7 +16,7 @@ const Login = () => {
                     na plataforma
                 </h3>
             </div>
-            
+
             <div className={styles.boxForm}>
                 <form action=""className={styles.Form}>
                     <input type="email" placeholder="Email" className={styles.inputForm} />
@@ -32,12 +32,11 @@ const Login = () => {
 
                     <a href="#" title="Entrar" className={styles.btnLogin}>Entrar</a>
 
-                    <p>Não tem uma conta? 
-                        <Link 
+                    <p>Não tem uma conta ?   <Link 
                             href="/registre" 
                             target="_blank" 
                             className={styles.btnLink}>
-                            Registre-se
+                                Registre-se
                         </Link>
                     </p>
 
@@ -45,10 +44,11 @@ const Login = () => {
 
                     <div className={styles.boxGoogle}>
                         <p>Ou entre com</p>
-                        <a href="http://" target="_blank" className={styles.btnGoogle}>
-                            <AiFillGoogleCircle style={{color:'#0B96C266', width:'24px'}}/>
+                        <Link href="http://" target="_blank" className={styles.btnGoogle}>
+                            <AiFillGoogleCircle className={styles.iconGoogle}/>
+                            
                             Google
-                        </a>
+                        </Link>
                     </div>
                 </form>
             </div>

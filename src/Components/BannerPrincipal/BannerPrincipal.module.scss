@@ -55,6 +55,8 @@
             line-height: 112.5%;
 
             &:hover{
+                transition: all 0.2s ease-out;
+                color: #000;
                 background-color: $colorSecond;
             }
 
@@ -81,5 +83,155 @@
         height: 100%;
         // border: 10px solid #102c37;
         // border-radius: 10px;
+    }
+}
+
+.Login{
+    // @include max-width;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    // background-color: $orangeMain;
+    background-image: url('/esqueci-senha.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 90px;
+    padding-bottom: 60px;
+
+    @include device(tablet){
+        flex-direction: column;
+    }
+
+    .boxText{
+        h2{
+            color: #0B96C2;
+            text-shadow: 0px 4.135135173797607px 4.135135173797607px 0px rgba(0, 0, 0, 0.50);
+            font-size: 62.027px;
+            font-family: Poppins;
+            font-weight: 700;
+            letter-spacing: -1.551px;
+        }
+
+        h3{
+            width: 100%;
+            max-width: 340px;
+            color: #E1E1E6;
+            font-size: 40px;
+            font-family: Poppins;
+            font-weight: 500;
+            line-height: 124.5%;
+        }
+    }
+
+    .boxForm{
+        width: 100%;
+        max-width: 547px;
+        background-color: $orangeMain;
+        border-radius: 20px;
+        border: 1px solid var(--quadradotranparente, #0B96C2);
+        background: linear-gradient(51deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(224deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.30);
+        box-shadow: 0px 4px 34.33000183105469px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 50px;
+        font-size: 1.6rem;
+
+        .Form{
+            width: 100%;
+            max-width: 547px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+
+            .inputForm{
+                background-color: transparent;
+            }
+
+            .inputForm{
+                background: transparent;
+                width: 100%;
+                max-width: 430px;
+                border-radius: 11px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                // background: var(--botes-transparentes, linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.20));
+                box-shadow: -3px 3px 6px 0px rgba(0, 0, 0, 0.20);
+                backdrop-filter: blur(17.165000915527344px);
+                padding: 15px 40px;
+                margin: 0 20px;
+                color: $white;
+            }
+
+            .btnLink{
+                width: 100%;
+                max-width: 430px;
+                text-align: left;
+                font-size: 1.6rem;
+                color: rgba(11, 150, 194, 0.80);
+
+                &:hover {
+                    color: $colorSecond;
+                }
+            }
+
+            .btnLogin{
+                width: 100%;
+                max-width: 430px;
+                height: 70px;
+                padding: 10px 40px;
+                border-radius: 11px;
+                background: #FFC700;
+                color: #000;
+                text-align: center;
+                display: flex;
+                font-weight: 700;
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+
+                &:hover {
+                    background-color: $colorMain;
+                }
+            }
+
+            .line{
+                width: 100%;
+                max-width: 430px;
+                opacity: 0.1;
+            }
+
+            .boxGoogle{
+                width: 100%;
+                max-width: 430px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .btnGoogle{
+                    width: 100%;
+                    max-width: 250px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 70px;
+                    text-transform: uppercase;
+                    border-radius: 7px;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    background: linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%), rgba(35, 35, 35, 0.5);
+                    margin: 15px;
+
+                    &:hover {
+                        background-color: $colorSecond;
+                    }
+                }
+            }
+        }
+
     }
 }

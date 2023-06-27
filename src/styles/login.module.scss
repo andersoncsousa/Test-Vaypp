@@ -366,12 +366,20 @@
                     border: 1px solid rgba(255, 255, 255, 0.2);
                     background: linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%), rgba(35, 35, 35, 0.5);
                     margin: 15px;
+                    color: #fff;
+
                 }
             }
         }
-
     }
+}
 
+.iconGoogle{
+    font-size: 26px;
+    color: $colorMain;
+    &:hover{
+        color: #000;
+    }
 }
 
 .ForgetPassword{

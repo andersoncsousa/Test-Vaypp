@@ -22,11 +22,13 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  background-image: url(/esqueci-senha.png);
+  // font-size: 1.6rem;
+  background-image: url(/login.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:100%;
+  background: rgb(18,18,20);
+  background: linear-gradient(90deg, rgba(18,18,20,1) 0%, rgba(47,50,71,1) 47%);
   // background-color: $orangeMain;
   // background: linear-gradient(-90deg, #2c1647, #052638);
   // background-size: 400% 400%;

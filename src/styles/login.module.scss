@@ -5,15 +5,17 @@
 .Login{
     // @include max-width;
     display: flex;
+    height: 100vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 100px;
+    // background-color: $orangeMain;
     background-image: url('/esqueci-senha.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    // padding-top: 40px;
+    padding-top: 40px;
     padding-bottom: 40px;
 
     @include device(tablet){

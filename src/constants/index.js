@@ -60,7 +60,7 @@ export const secondContent = [
 
 export const footer = {
   solucoes: [
-    { name: "Central de Ajuda", url: "#" },
+    { name: "Central de Ajuda", url: "/help-center" },
     { name: "Contato", url: "/contact" },
     { name: "Pagamentos", url: "#" },
     { name: "lorem", url: "#" },

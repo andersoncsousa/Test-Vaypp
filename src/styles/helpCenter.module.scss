@@ -154,6 +154,14 @@
         justify-content: flex-start;
         margin-bottom: 0;
         padding: 0px;
+
+        h4{
+            color: #FFF;
+            font-size: 20px;
+            font-family: $fontFamily;
+            font-weight: 600;
+            line-height: 124.5%;
+        }
         
         .rowCards{
             padding: 70px 0 0 0;

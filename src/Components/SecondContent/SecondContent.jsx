@@ -26,7 +26,7 @@ const SecondContent = () => {
                 <div className={styles.iconsBox}>
                     <Image src='./vayypZap.svg' alt="VayppZap" width={80} height={80} />
                     <div className={styles.boxText}>
-                        <h3 style={{paddingBottom: '4rem'}}>VayppZap</h3>
+                        <h3>VayppZap</h3>
                         <p>
                             Com nossa ferramenta gratuita, resgate suas 
                             vendas pelo WhatsApp e dê um impulso ao seu negócio!

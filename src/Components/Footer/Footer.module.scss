@@ -13,6 +13,11 @@
   background-color: $white;
   list-style: none;
 
+  .logo{
+    background-color: $colorMain;
+    border-radius: 5px;
+  }
+
   div{
     display: flex;
     flex-direction: column;

@@ -1,0 +1,256 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+
+.helpCenter{
+    .helpCenterContent{
+        @include max-width;
+        // height: 100vh;
+        margin-top: 140px;
+        .title{
+            font-family: $fontFamily2;
+            font-size: 35px;
+            font-weight: 400;
+            color:$white;
+            text-align: left;
+            margin: 0 0px 13px 0px;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            @include device(tablet){
+                font-size: 26px;
+            }
+        }
+    
+        .detail{
+            width: 10.667px;
+            height: 44.444px;
+            border-radius: 5.333px;
+            background-color: #0B96C2;
+            // padding: 20px 10px;
+            margin: 0 25px 20px 0px;
+
+            @include device(tablet){
+                margin: 0 5px;
+            }
+        }
+    
+        .subTitle{
+            font-family: $fontFamily2;
+            font-size: 30px;
+            font-weight: 500;
+            color:$white;
+            text-align: left;
+            margin: 0 0px 20px 0px;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            @include device(tablet){
+                font-size: 20px;
+                margin: 0 25px;
+            }
+        }
+    }
+
+    .rowCards{
+        @include max-width;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        // padding-top: 150px;
+        gap: 2rem;
+
+        .cardHelp{
+            width: 100%;
+            max-width: 300px;
+            height: 280px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 11px;
+            border: 1px solid var(--quadradotranparente, #0B96C2);
+            background: linear-gradient(27deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.30);
+
+            .cardHelpImg{
+                position: absolute;
+                top: -50px;
+            }
+
+            h4{
+                color: #E1E1E6;
+                text-align: center;
+                font-size: 23px;
+                font-family: Montserrat;
+                line-height: 124.5%;
+                font-weight: 400;
+                margin-top: 80px;
+            }
+        }
+
+        @include device(tablet){
+            flex-direction: column;
+            gap: 8rem;
+        }
+    }
+
+    .boxContact{
+        @include max-width;
+        display: flex;
+        padding: 15px 30px;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        background: var(--transparente-com-luz, linear-gradient(27deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.30));
+        gap: 2rem;
+
+        h4{
+            color: #FFF;
+            font-size: 20px;
+            font-family: $fontFamily;
+            // line-height: 124.5%;
+            font-weight: 500;
+        }
+
+        .btnContact{
+            display: flex;
+            width: 320px;
+            height: 50px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 11px;
+            color: #000;
+            background: #FFC700;
+
+            &:hover{
+                color: #FFF;
+                background-color: $colorMain;
+            }
+        }
+
+        @include device(tablet){
+            flex-direction: column;
+        }
+
+    }
+
+    .boxDoubt{
+        @include max-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        padding: 0px;
+        
+        .rowCards{
+            padding: 70px 0 0 0;
+            
+            .cardDoubt{
+                width: 100%;
+                max-width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                border-radius: 11px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                background: var(--transparente-com-luz, linear-gradient(27deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(35, 35, 35, 0.30));
+                padding: 20px;
+                gap: 3rem;
+
+                h5{
+                    color: #E1E1E6;
+                    font-size: 20px;
+                    font-family: $fontFamily;
+                    font-weight: 400;
+                    line-height: 124.5%;
+                }
+    
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        padding: 5px 25px;
+                    }
+                }
+            }
+            @include device(tablet){
+                flex-direction: column;
+                // gap: 8rem;
+                padding: 10px 10px 0 10px;
+            }
+        }
+
+    }
+
+    .boxTalkHelp{
+        @include max-width;
+        max-width: 600px;
+        margin: 0 65px;
+        padding: 20px 0;
+
+        h4{
+            color: #FFF;
+            font-size: 25px;
+            font-family: Montserrat;
+            font-weight: 600;
+            line-height: 124.5%;
+            margin-bottom: 21px;
+        }
+
+        p{
+            color: #FFF;
+            font-size: 20px;
+            font-family: Montserrat;
+            line-height: 124.5%;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .btnTalkHelp{
+            display: inline-flex;
+            padding: 10px 15px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 11px;
+            background: #FFC700;
+            margin-bottom: 100px;
+            color: #000;
+            font-weight: 600; 
+            
+            
+            &:hover{
+                background: $colorMain;
+                color: #FFF;
+            }
+        }
+        
+        @include device(tablet){
+            h4{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 16px;
+            }
+            
+            font-size: 14px;
+            margin: 0 0px;
+            padding: 0 10px;
+        }
+    }
+}

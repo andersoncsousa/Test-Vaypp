@@ -36,8 +36,15 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div>
-        <Link href="/" title="Vaypp">
-          <Image src="/vaypp2.png" alt="Vaypp" width={180} height={50} />
+        <Link href="/">
+          <Image
+            src="/vaypp2.jpg"
+            alt="Vaypp"
+            width={100}
+            height={25}
+            title="Vaypp"
+            className={styles.logo}
+          />
         </Link>
       </div>
       <div>

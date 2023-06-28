@@ -3,7 +3,7 @@
 
 .meusCursos{
     .meusCursosContent{
-        @include max-width;
+        // @include max-width;
 
         .meusCursosBanner{
             width: 90%;
@@ -21,7 +21,7 @@
             align-items: center;
             // display: grid;
             // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             margin-top: 50px;
 
             .btnCategorias{

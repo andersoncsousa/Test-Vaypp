@@ -4,37 +4,75 @@
 .meusCursos{
     .meusCursosContent{
         width: 100%;
-        height: 100vh;
-        .title{
-            font-family: $fontFamily2;
-            font-size: 35px;
-            font-weight: 500;
-            color:$white;
-            text-align: left;
-            margin: 0 20px 25px 20px;
+
+        .meusCursosBanner{
+            width: 90%;
+            // height: 100%;
+            // max-height: 750px;
+            margin: 0 auto;
+        }
+
+        .boxTitle{
+            margin: 100px 20px 25px 20px;
     
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: center;
             justify-content: flex-start;
-        }
-    
-        .detail{
-            width: 10.667px;
-            height: 44.444px;
-            border-radius: 5.333px;
-            background-color: #0B96C2;
-            // padding: 20px 10px;
-            margin: 0 25px;
+
+            .title{
+                font-family: $fontFamily2;
+                font-size: 35px;
+                font-weight: 500;
+                color:$white;
+                text-align: left;
+            }
+
+            .detail{
+                width: 10.667px;
+                height: 44.444px;
+                border-radius: 5.333px;
+                background-color: #0B96C2;
+                margin: 0 25px;
+            }
+
+            .boxBtnCursos{
+                padding: 0 0 0 50px;
+
+                .btnCursos{
+                    margin: 0px 15px;
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    border-radius: 128.235px;
+                    border: 1.914px solid #FFF;
+                    opacity: 0.20000000298023224;
+
+                    &:hover{
+                        color: #FFF;
+                        opacity: 1;
+                    }
+
+                    &:active{
+                        color: #FFF;
+                        opacity: 1;
+                    }
+                }
+            }
         }
 
         .meusCursosList{
+            height: 100%;
             display: grid;
-            grid-template-columns: 5fr;
-            margin: 80px 60px 0 60px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin: 50px 45px 80px 45px;
+
+            @include device(tablet){
+                grid-template-columns: 1fr;
+            }
 
             .meusCursosBanner{
-                height: 100vh;
+                height: 100%;
             }
 
             .cardCurso{
@@ -58,6 +96,33 @@
                 h4{
 
                 }
+            }
+        }
+
+        .btnBuscaMaisCursos{
+            display: inline-flex;
+            height: 100%;
+            padding: 15px 30px;
+            align-items: flex-start;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 134px;
+            background: #FFC700;
+            margin: 35px 45px 80px 45px;
+
+            color: #000;
+            font-size: 21.743px;
+            font-family: Poppins;
+
+            &:hover{
+                background: $colorMain;
+                color: #FFF;
+            }
+
+            &:active{
+                background: $colorMain;
+                color: #FFF;
+                border:1px solid #fff;
             }
         }
     }

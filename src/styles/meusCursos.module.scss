@@ -139,10 +139,13 @@
             gap: 1.6rem;
             margin: 0 auto;
             padding: 0;
-            max-width: 90%;
+            max-width: 95%;
 
             @include device(tablet){
-                grid-template-columns: 1fr;
+                // grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .meusCursosBanner{
@@ -156,7 +159,7 @@
                 background-image: url('/meusCursos.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: cover;
+                background-size: auto;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;

@@ -19,13 +19,13 @@ const meusCursos = () => {
                         </div>
                         <div className="carousel-inner">
                             <div class="carousel-item active">
-                            <Image width={1660} height={900} src={"/cursos.png"} className="d-block w-100" alt="..."/>
+                            <Image width={1660} height={500} src={"/cursos.png"} className="d-block w-100" alt="..."/>
                             </div>
                             <div class="carousel-item">
-                            <Image width={1660} height={900} src={"/cursos.png"} className="d-block w-100" alt="..."/>
+                            <Image width={1660} height={500} src={"/cursos.png"} className="d-block w-100" alt="..."/>
                             </div>
                             <div class="carousel-item">
-                            <Image width={1660} height={900} src={"/cursos.png"} className="d-block w-100" alt="..."/>
+                            <Image width={1660} height={500} src={"/cursos.png"} className="d-block w-100" alt="..."/>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

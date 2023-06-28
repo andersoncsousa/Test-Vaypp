@@ -8,6 +8,7 @@ import { AiFillStar } from "react-icons/ai";
 import { MdLanguage } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg"
+import { BsArrowDownCircle } from "react-icons/bs"
 
 const cursosPage = () => {
 
@@ -17,14 +18,14 @@ const cursosPage = () => {
             <div className={styles.cursosPageContent}>
                 <div className={styles.cursosHeader}>
                     <div className={styles.cursosHeaderImg}>
-                        <Image
-                            src="/cursos.png"
-                            alt="Vaypp"
-                            width={750}
-                            height={535}
-                            title="Vaypp"
-                            className={styles.logo}
-                            />
+                        {/* <Image
+                        src="/cursos.png"
+                        alt="Vaypp"
+                        width={750}
+                        height={535}
+                        title="Vaypp"
+                        className={styles.logo}
+                        /> */}
                     </div>
                     <div className={styles.cursosHeaderText}>
                         <div className={styles.boxTextTitle}>
@@ -58,8 +59,13 @@ const cursosPage = () => {
                             </Link>
                         </div>
                     </div>
+                    <div className={styles.boxSeta}>
+                        <Link href={'/'} alt="" >
+                            <BsArrowDownCircle className={styles.iconCursos}/>
+                        </Link>
+                    </div>
                 </div>
-
+                
                 <div className={styles.cursosDescription}>
                     <div className={styles.cursosDescriptionText}>
                         <h2>
@@ -204,7 +210,129 @@ const cursosPage = () => {
                         </div>
                     </div>
                     <div className={styles.listComents}>
+                        <div className={styles.comentsCard}>
+                            <div className={styles.comentsCardText}>
+                                <p>
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Volutpat est velit egestas dui id ornare arcu odio. 
+                                    Id consectetur purus ut faucibus pulvinar.”
+                                </p>
+                            </div>
+                            <div className={styles.comentsCardDescription}>
+                                <div className={styles.comentsCardPerfil}>
+                                    <Image 
+                                        className={styles.comentsCardPhoto}
+                                        src={'/photoperfil1.png'} 
+                                        width={46} 
+                                        height={40} 
+                                        alt="vaypp" 
+                                    />
+                                    <h3>
+                                        Luis Fernando
+                                    </h3>
+                                </div>
+                                <div className={styles.boxComentsCardRate}>
+                                    <p>
+                                        4.9
+                                    </p>
+                                    <AiFillStar className={styles.iconCursos}/>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div className={styles.comentsCard}>
+                            <div className={styles.comentsCardText}>
+                                <p>
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Volutpat est velit egestas dui id ornare arcu odio. 
+                                    Id consectetur purus ut faucibus pulvinar.”
+                                </p>
+                            </div>
+                            <div className={styles.comentsCardDescription}>
+                                <div className={styles.comentsCardPerfil}>
+                                    <Image 
+                                        className={styles.comentsCardPhoto}
+                                        src={'/photoperfil2.png'} 
+                                        width={46} 
+                                        height={40} 
+                                        alt="vaypp" 
+                                    />
+                                    <h3>
+                                        Luiza
+                                    </h3>
+                                </div>
+                                <div className={styles.boxComentsCardRate}>
+                                    <p>
+                                        4
+                                    </p>
+                                    <AiFillStar className={styles.iconCursos}/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.comentsCard}>
+                            <div className={styles.comentsCardText}>
+                                <p>
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Volutpat est velit egestas dui id ornare arcu odio. 
+                                    Id consectetur purus ut faucibus pulvinar.”
+                                </p>
+                            </div>
+                            <div className={styles.comentsCardDescription}>
+                                <div className={styles.comentsCardPerfil}>
+                                    <Image 
+                                        className={styles.comentsCardPhoto}
+                                        src={'/photoperfil3.png'} 
+                                        width={46} 
+                                        height={40} 
+                                        alt="vaypp" 
+                                    />
+                                    <h3>
+                                        Jonas
+                                    </h3>
+                                </div>
+                                <div className={styles.boxComentsCardRate}>
+                                    <p>
+                                        5
+                                    </p>
+                                    <AiFillStar className={styles.iconCursos}/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.comentsCard}>
+                            <div className={styles.comentsCardText}>
+                                <p>
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Volutpat est velit egestas dui id ornare arcu odio. 
+                                    Id consectetur purus ut faucibus pulvinar.”
+                                </p>
+                            </div>
+                            <div className={styles.comentsCardDescription}>
+                                <div className={styles.comentsCardPerfil}>
+                                    <Image 
+                                        className={styles.comentsCardPhoto}
+                                        src={'/photoperfil4.png'} 
+                                        width={46} 
+                                        height={40} 
+                                        alt="vaypp" 
+                                    />
+                                    <h3>
+                                        Thiago Santos
+                                    </h3>
+                                </div>
+                                <div className={styles.boxComentsCardRate}>
+                                    <p>
+                                        5
+                                    </p>
+                                    <AiFillStar className={styles.iconCursos}/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

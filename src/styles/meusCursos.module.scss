@@ -1,0 +1,64 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.meusCursos{
+    .meusCursosContent{
+        width: 100%;
+        height: 100vh;
+        .title{
+            font-family: $fontFamily2;
+            font-size: 35px;
+            font-weight: 500;
+            color:$white;
+            text-align: left;
+            margin: 0 20px 25px 20px;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    
+        .detail{
+            width: 10.667px;
+            height: 44.444px;
+            border-radius: 5.333px;
+            background-color: #0B96C2;
+            // padding: 20px 10px;
+            margin: 0 25px;
+        }
+
+        .meusCursosList{
+            display: grid;
+            grid-template-columns: 5fr;
+            margin: 80px 60px 0 60px;
+
+            .meusCursosBanner{
+                height: 100vh;
+            }
+
+            .cardCurso{
+                width: 100%;
+                max-width: 220px;
+                height: 360px;
+                background-image: url('/meusCursos.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding: 0 10px 30px 0px;
+
+                h3{
+
+                }
+
+                h4{
+
+                }
+            }
+        }
+    }
+}

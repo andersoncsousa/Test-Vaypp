@@ -9,7 +9,7 @@ const helpCenter = () => {
 
   return (
     <div className={styles.helpCenter}>
-      <Navbar />
+        <Navbar />
         <div className={styles.helpCenterContent}>
             <h3 className={styles.title}>
                 <div className={styles.detail}></div> 

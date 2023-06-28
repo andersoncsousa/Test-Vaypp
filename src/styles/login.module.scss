@@ -251,6 +251,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
                 // align-items: center;
 
                 p{
@@ -260,36 +261,42 @@
                 .boxBtns{
                     display: flex;
                     flex-direction: row;
-                    justify-content: center;
                     align-items: center;
-                    // border: 1px solid red;
+                    justify-content: space-between;
+                    background: #343434;
+                    border: 1px solid #D9D9D9;
+                    border-radius: 11px;
+
                     .btnVenda{
-                        padding: 26px;
                         border-radius: 11px;
-                        border: 1px solid #FFC700;
+                        padding: 26px;
                         background: #343434;
+
                         &:hover{
-                            border: 1px solid $colorMain;
+                            background-color: #121214;
+                            border:1px solid #FFC700;
                         }
                         &:active{
-                            border: 1px solid #D9D9D9;
-                            background: #343434;
+                            background-color: #121214;
+                            border:1px solid #FFC700;
                         }
                     }
                     .btnComprar{
                         padding: 26px;
-                        border: 1px solid #D9D9D9;
-                        border-radius: 0 11px 11px 0;
-                        background: #343434;
                         border-left: none;
+                        border-radius: 11px;
                         
                         &:hover{
-                            border: 1px solid #FFC700;
+                            background-color: #121214;
+                            border:1px solid #FFC700;
                         }
                         &:active{
-                            border: 1px solid $colorMain;
-                            background: #343434;
+                            background-color: #121214;
+                            border:1px solid #FFC700;
                         }
+                    }
+                    &:hover{
+                        border:0px solid #FFC700;
                     }
                 }
             }
@@ -443,6 +450,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                background: #343434;
                 // align-items: center;
 
                 p{
@@ -459,7 +467,7 @@
                         padding: 26px;
                         border-radius: 11px;
                         border: 1px solid #FFC700;
-                        background: #343434;
+                        
                         &:hover{
                             border: 1px solid $colorMain;
                         }

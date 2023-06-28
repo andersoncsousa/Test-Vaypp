@@ -39,9 +39,29 @@ const meusCursos = () => {
                     </div>
                 </div>
 
+                <div className={styles.boxBtnCategorias}>
+                    <Link className={styles.btnCategorias} href={'/'}>
+                        Buscar mais cursos
+                    </Link>
+                    <Link className={styles.btnCategorias} href={'/'}>
+                        Buscar mais cursos
+                    </Link>
+                    <Link className={styles.btnCategorias} href={'/'}>
+                        Buscar mais cursos
+                    </Link>
+                    <Link className={styles.btnCategorias} href={'/'}>
+                        Buscar mais cursos
+                    </Link>
+                    <Link className={styles.btnCategorias} href={'/'}>
+                        Buscar mais cursos
+                    </Link>
+                </div>
+
                 <div className={styles.boxTitle}>
-                    <div className={styles.detail}></div>
-                    <h3 className={styles.title}>Meus cursos</h3> 
+                    <h3 className={styles.title}>
+                        <div className={styles.detail}></div>
+                        Meus cursos
+                    </h3> 
 
                     <div className={styles.boxBtnCursos}>
                         <Link className={styles.btnCursos} href={'/'}>

@@ -3,7 +3,7 @@
 
 .meusCursos{
     .meusCursosContent{
-        width: 100%;
+        @include max-width;
 
         .meusCursosBanner{
             width: 90%;

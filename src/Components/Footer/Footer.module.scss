@@ -26,6 +26,7 @@
     padding-top: 20px;
 
     ul{
+      padding: 0;
       li{
         display: flex;
         flex-direction: column;
@@ -42,6 +43,9 @@
   .social{
     .link{
       padding: 0 0 0 10px;
+      &:first-child{
+        padding: 0;
+      }
       &:hover{
         transition: all 0.2s ease-out;
         color: $colorMain;

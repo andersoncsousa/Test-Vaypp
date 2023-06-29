@@ -50,8 +50,10 @@
         }
 
         .boxTitle{
-            margin: 100px 20px 25px 20px;
-    
+            // @include max-width;
+            margin: 100px 0px 25px 125px;
+            // margin-top: 100px;
+
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -161,7 +163,7 @@
                 background-image: url('/meusCursos.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: auto;
+                background-size: 110%;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
@@ -203,7 +205,7 @@
             flex-shrink: 0;
             border-radius: 134px;
             background: #FFC700;
-            margin: 35px 45px 80px 45px;
+            margin: 100px 0px 25px 150px;
 
             color: #000;
             font-size: 21.743px;

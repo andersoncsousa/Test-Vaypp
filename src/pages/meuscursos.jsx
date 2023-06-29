@@ -41,19 +41,19 @@ const meusCursos = () => {
 
                 <div className={styles.boxBtnCategorias}>
                     <Link className={styles.btnCategorias} href={'/'}>
-                        Buscar mais cursos
+                        Patrocinio
                     </Link>
                     <Link className={styles.btnCategorias} href={'/'}>
-                        Buscar mais cursos
+                        Patrocinio
                     </Link>
                     <Link className={styles.btnCategorias} href={'/'}>
-                        Buscar mais cursos
+                        Patrocinio
                     </Link>
                     <Link className={styles.btnCategorias} href={'/'}>
-                        Buscar mais cursos
+                        Patrocinio
                     </Link>
                     <Link className={styles.btnCategorias} href={'/'}>
-                        Buscar mais cursos
+                        Patrocinio
                     </Link>
                 </div>
 
